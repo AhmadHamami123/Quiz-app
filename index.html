@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome Screen with Name Input -->
+        <div id="welcome-screen" class="screen">
+            <h1>Welcome to the Quiz!</h1>
+            <input type="text" id="username" placeholder="Enter your name" />
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quiz-screen" class="screen">
+            <h1 id="question-title"></h1>
+            <div id="answers"></div>
+            <div id="next-btn-container">
+                <button id="next-btn" class="next-btn">Next Question</button>
+            </div>
+        </div>
+
+        <!-- Leaderboard Screen -->
+        <div id="leaderboard-screen" class="screen">
+            <h1>Leaderboard</h1>
+            <div id="leaderboard-list"></div>
+            <button id="play-again-btn">Play Again</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

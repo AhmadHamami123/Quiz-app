@@ -1,0 +1,92 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 2px solid #0072ff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    background-color: #0072ff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+    transform: scale(1.1);
+}
+
+.screen {
+    display: none;
+}
+
+#quiz-screen {
+    display: block;
+}
+
+#answers button {
+    margin: 10px;
+    padding: 12px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333; /* Improved text contrast */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#answers button:hover {
+    background-color: #0072ff;
+    color: #fff;
+}
+
+#answers button.correct {
+    background-color: #28a745;
+    color: white;
+}
+
+#answers button.wrong {
+    background-color: #dc3545;
+    color: white;
+}
+
+#leaderboard-list {
+    text-align: left;
+}
+
+#leaderboard-list p {
+    font-size: 18px;
+}
